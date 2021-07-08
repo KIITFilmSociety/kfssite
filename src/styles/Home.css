@@ -1,0 +1,53 @@
+.App {
+  background-color: black;
+  
+}
+
+.elps{
+  position: absolute;
+width: 1050px;
+height: 1050px;
+left: 584px;
+top: -480px;
+border-radius: 50%;
+/* z-index: 1; */
+background: #2F2F2F;
+}
+
+
+.grp28{
+  position: absolute;
+width: 480px;
+height: 307.05px;
+left: 144px;
+top: 200px;
+
+}
+
+
+.flame{
+  position: absolute;
+width: 320px;
+height: 390px;
+left: 826px;
+top: 110px;
+}
+
+.button-bot{
+  position: absolute;
+  width: 170px;
+height: 53px;
+left: 144px;
+bottom:1em;
+   background: #FF5757;
+border-radius: 5px;
+z-index:2;
+border:0;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 22px;
+
+  
+}
