@@ -1,10 +1,7 @@
 @import './variables.css';
 
-
-
 .App {
   background-color: black;
-  
 }
 
 .elps{
@@ -18,7 +15,6 @@ border-radius: 50%;
 background: #2F2F2F;
 }
 
-
 .grp28{
   position: absolute;
 width: 480px;
@@ -27,7 +23,6 @@ left: 144px;
 top: 200px;
 
 }
-
 
 .flame{
   position: absolute;
@@ -38,12 +33,12 @@ top: 110px;
 }
 
 .button-bot{
-  position: absolute;
-  width: 170px;
+position: absolute;
+width: 170px;
 height: 53px;
 left: 144px;
 bottom:1em;
-   background: var(--primary);
+background: var(--primary);
 border-radius: 5px;
 z-index:2;
 border:0;
@@ -52,6 +47,4 @@ font-style: normal;
 font-weight: 800;
 font-size: 18px;
 line-height: 22px;
-
-  
 }
