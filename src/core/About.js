@@ -2,12 +2,14 @@ import * as React from "react"
 import Card from '../components/Card'
 import Image1 from '../images/kauc.jpg'
 import Image2 from '../images/debu.jpg'
-
+import Navbar from "../components/Navbar"
 
 
 function About() {
   // 2. Use at the root of your app
   return (
+    <div>
+    <Navbar/>
     <div className='row about'>
     <Card
       name={'Kaustav Mukhopadhyay'}
@@ -37,6 +39,7 @@ function About() {
       cover={'https://img.artpal.com/994621/175-20-6-20-3-42-2m.jpg'}
       className='Card col-4'
           />
+  </div>
   </div>
     )
 }

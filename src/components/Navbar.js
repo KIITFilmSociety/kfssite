@@ -2,13 +2,25 @@ import React from 'react';
 import "../styles/navbar.css"
 import kfs from '../images/kfs.svg'
 import { Link, withRouter } from "react-router-dom";
-import { createBrowserHistory } from 'history';
+import '../styles/variables.css'
+
+const currentTab =(history,path)=>{
+  if(history.location.pathname===path){
+    return {color:'var(--primary)',
+    'text-decoration':'underline solid var(--primary) 3px',
+    'text-underline-offset': '3px'
+  }
+  }else{
+  return {color:'white'}
+  }
+} 
 
 
 
+function Navbar({history}){
 
 
-function Navbar(){
+console.log(history);
 
 return (
     <nav className="navbar transparent navbar-expand-lg navbar-light ">
@@ -20,19 +32,19 @@ return (
       <div className="collapse nav-div navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="nav-link active"   aria-current="page" href="#">Home</Link>
+            <Link className="nav-link" style={currentTab(history,'/')}  aria-current="page" to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" href="#">About</Link>
+            <Link className="nav-link" aria-current="page" style={currentTab(history,'/about')}  to="/about">About</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" href="#">Work</Link>
+            <Link className="nav-link" aria-current="page" to="#">Work</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" href="#">Members</Link>
+            <Link className="nav-link" aria-current="page" to="#">Members</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" href="#">Contact Us</Link>
+            <Link className="nav-link" aria-current="page" to="#">Contact Us</Link>
           </li>
          
           
@@ -46,4 +58,4 @@ return (
 
 }
 
-export default Navbar;
+export default withRouter(Navbar);
