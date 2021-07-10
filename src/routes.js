@@ -1,8 +1,12 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Home from './core/Home'
-import Members from './core/Members'
-import Events from './core/Events'
+
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./core/Home";
+import Members from "./core/Members"
+import Events from "./core/Events"
+import About from './core/About'
+import Works from './core/Works'
+
 
 function Routes () {
   return (
