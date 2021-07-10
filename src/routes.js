@@ -4,6 +4,9 @@ import Home from "./core/Home";
 import Members from "./core/Members"
 import Events from "./core/Events"
 import About from './core/About'
+import Works from './core/Works'
+
+
 function Routes(){
 
 return(
@@ -13,6 +16,7 @@ return(
       <Route path="/members" exact component={Members} />
       <Route path="/events" exact component={Events} />
       <Route path="/about" exact component={About} />
+      <Route path="/works" exact component={Works} />
       </Switch>
   </BrowserRouter>
 
