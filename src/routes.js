@@ -12,7 +12,7 @@ function Routes () {
   return (
     <BrowserRouter>
       <Switch>
-<<<<<<< HEAD
+
       <Route path="/" exact component={Home} />
       <Route path="/members" exact component={Members} />
       <Route path="/events" exact component={Events} />
