@@ -9,7 +9,7 @@ function Members () {
   return (
     <div className='App'>
       <Navbar />
-      <div className='container'>
+      <div className='memcontainer'>
         <Card
           name={'Kaustav Mukhopadhyay'}
           job={'Graphic Design Team'}

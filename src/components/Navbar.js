@@ -62,6 +62,16 @@ function Navbar ({ history }) {
             <li className='nav-item'>
               <Link
                 className='nav-link'
+                style={currentTab(history, '/events')}
+                aria-current='page'
+                to='/events'
+							>
+								Events
+							</Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                className='nav-link'
                 style={currentTab(history, '/members')}
                 aria-current='page'
                 to='/members'
