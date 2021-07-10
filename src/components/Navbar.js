@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/navbar.css'
-import kfs from '../images/kfs.svg'
 import { Link, withRouter } from 'react-router-dom'
+import kfs from '../images/kfs.svg'
+import '../styles/navbar.css'
 import '../styles/variables.css'
 
 const currentTab = (history, path) => {

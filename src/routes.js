@@ -1,16 +1,12 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Home from "./core/Home";
-import Members from "./core/Members"
-import Events from "./core/Events"
-import About from './core/About'
-import Works from './core/Works'
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Home from './core/Home'
+import Members from './core/Members'
+import Events from './core/Events'
 
-
-function Routes(){
-
-return(
-  <BrowserRouter>
+function Routes () {
+  return (
+    <BrowserRouter>
       <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/members" exact component={Members} />
@@ -18,10 +14,8 @@ return(
       <Route path="/about" exact component={About} />
       <Route path="/works" exact component={Works} />
       </Switch>
-  </BrowserRouter>
-
-)
+    </BrowserRouter>
+  )
 }
 
-
-export default Routes;
+export default Routes
