@@ -1,0 +1,53 @@
+@import './variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.works{
+position: relative;
+left:5em;
+margin-top:5em;
+z-index: 2;
+overflow: hidden;
+}
+
+.works h1{
+    font-family: 'Montserrat', sans-serif;
+ font-weight:800;
+ color:white;
+}
+.works p{
+    font-family: 'Montserrat', sans-serif;
+margin-top: 1em;
+ color:white;
+ width: 40em;
+}
+
+
+.work-buttons{
+    display:inline-flex;
+    position:relative;
+    left:2.2em;
+    margin-top: 1em;
+    
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.fa-medium{
+    color: black;
+}
+
+.vector{
+   
+    position:absolute;
+    top: 0;
+    z-index:1;
+   height: 100%;
+   width:fit-content;
+
+ 
+
+    
+}

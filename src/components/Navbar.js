@@ -9,7 +9,7 @@ const currentTab = (history, path) => {
     return {
       color: 'var(--primary)',
       'text-decoration': 'underline solid var(--primary) 3px',
-      'text-underline-offset': '3px'
+      'text-underline-offset': '5px'
     }
   } else {
     return { color: 'white' }
@@ -50,23 +50,13 @@ function Navbar ({ history }) {
 							</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' aria-current='page' to='#'>
+              <Link className='nav-link'  style={currentTab(history, '/about')} aria-current='page' to='/about'>
 								About
 							</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' aria-current='page' to='#'>
+              <Link className='nav-link'  style={currentTab(history, '/works')} aria-current='page' to='/works'>
 								Work
-							</Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                className='nav-link'
-                style={currentTab(history, '/events')}
-                aria-current='page'
-                to='/events'
-							>
-								Events
 							</Link>
             </li>
             <li className='nav-item'>
