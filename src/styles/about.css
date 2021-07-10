@@ -1,4 +1,25 @@
-.Card{
-    margin-right: 30px;
-  }
+@import './variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body p{
+  color: white;
+}
 
+.f1{
+  position: relative;
+  left: 9em;
+  width:50em;
+}
+.f1 h1{
+ margin-bottom: 1em;
+ font-family: 'Montserrat', sans-serif;
+ font-weight:800;
+}
+
+.f1 .f2{
+  margin-top: 5em;
+}
+.about button{
+  position: relative;
+  left: 6.5em;
+  margin-top:1em;
+}
