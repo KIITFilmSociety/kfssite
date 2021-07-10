@@ -70,7 +70,7 @@ function Navbar ({ history }) {
 							</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' aria-current='page' to='#'>
+              <Link className='nav-link'  style={currentTab(history, '/contact')} aria-current='page' to='/contact'>
 								Contact Us
 							</Link>
             </li>
