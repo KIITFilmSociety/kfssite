@@ -1,0 +1,41 @@
+@import './variables.css';
+
+
+.contact{
+color: var(--nav-color);
+margin-top: 3em;
+}
+
+
+.contact-1{
+    position: relative;
+left:9em;
+}
+
+.contact-1 h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size:18px;
+    font-weight: 700;
+ }
+.contact-1 h6{
+    margin-top: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+ }
+
+.contact-1 li{
+    font-size:15px;
+   margin-top: 1em;
+   font-weight: 500;
+}
+
+.disq{
+    margin-top: 4em;
+    font-size:18px;
+    font-weight: 700;
+}
+
+pre{
+    padding-top: 1em;
+color:white !important;
+}
