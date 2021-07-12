@@ -5,7 +5,7 @@ import flame from '../images/flame.png'
 import Navbar from '../components/Navbar';
 import '../styles/Home.css';
 import { Link } from "react-router-dom";
-import { Controls, PlayState,Timeline, Tween } from 'react-gsap';
+import { Timeline, Tween } from 'react-gsap';
 function Home() {
   // 2. Use at the root of your app
   return (
