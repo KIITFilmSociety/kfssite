@@ -1,7 +1,9 @@
 @import './variables.css';
 
 
-
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
 .App {
   background-color: black;
   

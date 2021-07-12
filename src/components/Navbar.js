@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router-dom'
 import kfs from '../images/kfs.svg'
 import '../styles/navbar.css'
 import '../styles/variables.css'
-
+import {  Tween } from 'react-gsap';
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
     return {
@@ -22,7 +22,10 @@ function Navbar ({ history }) {
   return (
     <nav className='navbar transparent navbar-expand-lg navbar-light '>
       <div className='container-fluid act'>
-        <img src={kfs} alt='kfs' className='logo' />
+      <Tween from={{ x: '200px', rotation: 180 }} duration={2} ease="back.out(1.7)">
+      <img src={kfs} alt='kfs' className='logo' />
+  </Tween>
+        
         <button
           className='navbar-toggler '
           type='button'
