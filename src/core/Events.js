@@ -9,7 +9,7 @@ function Events () {
       <Navbar />
       <div className='container'>
         <div className='row'>
-          <div className='col-6 m-10'>
+          <div className='col-md-6 m-10'>
             <div className='eventbox'>
               <img src={Image1} alt='' />
               <div className='evinfo'>
@@ -23,7 +23,7 @@ function Events () {
               </div>
             </div>
           </div>
-          <div className='col-6 m-10'>
+          <div className='col-md-6 m-10'>
             <div className='eventbox'>
               <img src={Image1} alt='' />
               <div className='evinfo'>
@@ -39,7 +39,7 @@ function Events () {
           </div>
         </div>
         <div className='row'>
-          <div className='col-6 m-10'>
+          <div className='col-md-6 m-10'>
             <div className='eventbox'>
               <img src={Image1} alt='' />
               <div className='evinfo'>
@@ -53,8 +53,9 @@ function Events () {
               </div>
             </div>
           </div>
-          <div className='col-6 m-10'>
+          <div className='col-md-6 m-10'>
             <div className='eventbox'>
+            
               <img src={Image1} alt='' />
               <div className='evinfo'>
                 <h3 className='evhead'>Event Name</h3>
