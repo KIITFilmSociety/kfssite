@@ -12,8 +12,9 @@ function Home() {
     
       <div className="App">
       <Navbar/>
-
-  <Timeline
+     
+      <i class="fas fa-star" style={{'position':'relative','top':'18px','left':'11em'}}></i>
+     <Timeline
     target={
       <img src={Ellips2} alt="some svg" className="elps"/>
     }
@@ -25,12 +26,9 @@ function Home() {
   <Tween from={{ x: '-200px' }} duration={2}>
   <img src={Group28} alt="some svg" className="grp28"/>
   </Tween>
-    
-    
-    
     <div>
     
-    
+    <i class="fas fa-star" style={{'position':'relative','top':'8em','left':'35em'}}></i>
   
   <Tween from={{ y: '200px',x:"-200px"}} duration={1}>
   <img src={flame} alt="something " className="flame"/>
