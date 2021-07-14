@@ -24,7 +24,7 @@ function Navbar ({ history }) {
   return (
     <nav className='navbar transparent navbar-expand-lg navbar-light '>
       <div className='container-fluid act'>
-     {(history.location.pathname=='/')?
+     {(history.location.pathname==='/')?
         <Tween from={{ x: '200px', rotation: 180 }} duration={2} ease="back.out(1.7)">
       <img src={kfs} alt='kfs' className='logo' />
   </Tween>: <img src={kfs} alt='kfs' className='logo' />
