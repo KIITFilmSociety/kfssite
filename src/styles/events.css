@@ -24,10 +24,12 @@ padding-right: 10px;
 }
 
 
-*{
-    overflow-y: visible!important;
-}
-@media screen and (max-width: 992px) {
+
+@media(max-width: 992px) {
+
+    body{
+        overflow-y: visible;
+    }
 .eventbox{
     flex-direction: column;
 }

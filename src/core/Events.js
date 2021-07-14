@@ -5,7 +5,7 @@ import Image1 from '../images/kauc.jpg'
 
 function Events () {
   return (
-    <div className='App'>
+    <div className='events'>
       <Navbar />
       <div className='container'>
         <div className='row'>

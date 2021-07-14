@@ -16,15 +16,19 @@ const currentTab = (history, path) => {
   }
 }
 
+
+
 function Navbar ({ history }) {
-  console.log(history)
+  console.log(history.location.pathname)
 
   return (
     <nav className='navbar transparent navbar-expand-lg navbar-light '>
       <div className='container-fluid act'>
-      <Tween from={{ x: '200px', rotation: 180 }} duration={2} ease="back.out(1.7)">
+     {(history.location.pathname=='/')?
+        <Tween from={{ x: '200px', rotation: 180 }} duration={2} ease="back.out(1.7)">
       <img src={kfs} alt='kfs' className='logo' />
-  </Tween>
+  </Tween>: <img src={kfs} alt='kfs' className='logo' />
+     }
         
         <button
           className='navbar-toggler '
