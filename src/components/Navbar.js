@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
-import kfs from '../images/kfs.svg'
+import kfs from '../images/kfs.png'
 import '../styles/navbar.css'
 import '../styles/variables.css'
 import {  Tween } from 'react-gsap';
@@ -26,8 +26,8 @@ function Navbar ({ history }) {
       <div className='container-fluid act'>
      {(history.location.pathname==='/')?
         <Tween from={{ x: '200px', rotation: 180 }} duration={2} ease="back.out(1.7)">
-      <img src={kfs} alt='kfs' className='logo' />
-  </Tween>: <img src={kfs} alt='kfs' className='logo' />
+      <img src={kfs} height="80vh" alt='kfs' className='logo' />
+  </Tween>: <img src={kfs} height="80vh"alt='kfs' className='logo' />
      }
         
         <button

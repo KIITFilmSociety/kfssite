@@ -2,7 +2,7 @@ import * as React from 'react'
 import Ellips2 from '../images/Ellips2.png'
 import Group28 from '../images/Group28.png'
 import flame from '../images/flame.png'
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar1';
 import '../styles/Home.css';
 import { Link } from "react-router-dom";
 import { Timeline, Tween } from 'react-gsap';

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import '../styles/events.css'
-import Navbar from '../components/Navbar.js'
+import Navbar from '../components/Navbar1.js'
 import Image1 from '../images/kauc.jpg'
 
 function Events () {

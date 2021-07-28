@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Navbar from '../components/Navbar.js'
+import Navbar from '../components/Navbar1.js'
 import Card from '../components/Card.jsx'
 import Image1 from '../images/kauc.jpg'
 import Image2 from '../images/debu.jpg'
