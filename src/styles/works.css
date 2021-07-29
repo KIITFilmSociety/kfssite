@@ -1,13 +1,23 @@
 @import './variables.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-
+.cont1
+{
+    height: 85vh;
+}
+.wave{
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    z-index: -1;
+}
 .works{
-position: relative;
-left:5em;
-margin-top:5em;
+
+margin-left:5vw;
+margin-top:5vh;
 z-index: 2;
-overflow: hidden;
+height: 50vh;
+
 }
 
 .works h1{
@@ -39,11 +49,3 @@ margin-top: 1em;
     color: black;
 }
 
-.vector{
-   
-    position:absolute;
-    top: 0;
-    z-index:1;
-   height: 100%;
-   width:fit-content;
-}

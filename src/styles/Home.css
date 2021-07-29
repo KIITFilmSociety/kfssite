@@ -1,49 +1,71 @@
 @import './variables.css';
 
 
-
+body {
+  overflow: hidden; /* Hide scrollbars */
+  
+}
 .App {
   background-color: black;
   
 }
-
+.cont1
+{
+  height: 85vh;
+}
 .elps{
-  position: absolute;
-width: 1050px;
-height: 1050px;
-left: 584px;
-top: -480px;
+
+width: 80vw;
+height: 80vw;
+position: absolute;
+left: 0;
+top: 0;
 border-radius: 50%;
-/* z-index: 1; */
+margin-top: -35%;
+margin-left: 45%;
 background: #2F2F2F;
 }
 
-
-.grp28{
-  position: absolute;
-width: 480px;
-height: 307.05px;
-left: 144px;
-top: 200px;
+.hometxt
+{
+  z-index: 2;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.5rem;
+  color: white;
+  width:max-content;
 
 }
 
+.squiggl
+{
+display: block;
+margin-left: 30%;
+margin-top: -5%;
+
+}
 
 .flame{
-  position: absolute;
-width: 320px;
-height: 390px;
-left: 826px;
-top: 110px;
+z-index: 2;
+position: absolute;
+top: 0;
+right: 0%;
+margin-top: 10vh;
+margin-right: 10vw;
+height: 30vw;
 }
 
 .button-bot{
-  position: absolute;
-  width: 170px;
+position: relative;
+width: 170px;
 height: 53px;
-left: 144px;
-bottom:1em;
-   background: var(--primary);
+/* left: 144px; */
+top:3vh;
+display: block;
+/* margin-left: 10vw; */
+/* margin-top: 5vh; */
+background: var(--primary);
 border-radius: 5px;
 z-index:2;
 border:0;
@@ -52,6 +74,65 @@ font-style: normal;
 font-weight: 800;
 font-size: 18px;
 line-height: 22px;
+}
 
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+.fa-star {
+animation: 2.5s rotate infinite;
+animation-timing-function: linear;
+color:var(--primary);
+}
+
+
+/* .fa-star{
+  z-index: 1;
+  color:var(--primary);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
   
+  
+}
+
+.fa-star:hover {
+	background: black;
+	-webkit-transform: rotate(1080deg);
+	-moz-transform: rotate(1080deg);
+	-o-transform: rotate(1080deg);
+	-ms-transform: rotate(1080deg);
+	transform: rotate(1080deg);
+
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+} */
+
+@media only screen and (max-width: 767px) 
+{
+/* .flame
+{
+  display: none;
+}*/
+.elps
+{
+  display: none;
+}
+/*.hometxt
+{
+  display: none;
+}
+.button-bot
+{
+  display: none;
+} */
+.cont1
+{
+  display: none;
+}
 }

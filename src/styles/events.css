@@ -1,21 +1,49 @@
 .eventbox{
     background-color: rgb(214, 157, 157);
     display: flex;
-    height: 40vh;
+    height: fit-content;  
     border-radius: 20px;
     background-image: linear-gradient(rgb(50,48,48), rgb(29,28,28));
     color: rgb(196,196,196);
+    margin-bottom: 20PX;
 }
 
 .eventbox img{
     margin: 20px 10px;
-    width:40%;
+    width:30%;
+    height: min-content;
+    align-self: center;
+
 }
 
 .evinfo{
 padding-top: 20px;
+padding-bottom: 20px;
+padding-right: 10px;
+
 }
 
-.row{
-    margin:  30px 0px;
+
+
+@media(max-width: 992px) {
+
+    body{
+        overflow-y: visible;
+    }
+.eventbox{
+    flex-direction: column;
 }
+.eventbox img{
+    align-self: center;
+    border-radius: 20px;
+
+}
+.evinfo
+{
+    padding-left: 20px;
+    padding-top: 0px;
+}
+.evinfo {
+    text-align: center;
+}
+  }

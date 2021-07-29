@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
-import kfs from '../images/kfs.svg'
+import kfs from '../images/kfs.png'
 import '../styles/navbar.css'
 import '../styles/variables.css'
-
+import {  Tween } from 'react-gsap';
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
     return {
@@ -16,13 +16,20 @@ const currentTab = (history, path) => {
   }
 }
 
+
+
 function Navbar ({ history }) {
-  console.log(history)
+  console.log(history.location.pathname)
 
   return (
     <nav className='navbar transparent navbar-expand-lg navbar-light '>
       <div className='container-fluid act'>
-        <img src={kfs} alt='kfs' className='logo' />
+     {(history.location.pathname==='/')?
+        <Tween from={{ x: '200px', rotation: 180 }} duration={2} ease="back.out(1.7)">
+      <img src={kfs} height="80vh" alt='kfs' className='logo' />
+  </Tween>: <img src={kfs} height="80vh"alt='kfs' className='logo' />
+     }
+        
         <button
           className='navbar-toggler '
           type='button'
@@ -70,7 +77,7 @@ function Navbar ({ history }) {
 							</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' aria-current='page' to='#'>
+              <Link className='nav-link'  style={currentTab(history, '/contact')} aria-current='page' to='/contact'>
 								Contact Us
 							</Link>
             </li>
