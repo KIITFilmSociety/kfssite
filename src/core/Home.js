@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Ellips2 from '../images/Ellips2.png'
-import Group28 from '../images/Group28.png'
+// import Group28 from '../images/Group28.png'
+import squiggle from '../images/squiggle.svg'
 import flame from '../images/flame.png'
 import Navbar from '../components/Navbar1';
 import '../styles/Home.css';
@@ -23,10 +24,14 @@ function Home() {
     <Tween from={{ y: '-600px' }} />
     <Tween from={{ rotation: 180 }} position="+=1" />
   </Timeline>
-  <Tween from={{ x: '-200px' }} duration={2}>
-  <img src={Group28} alt="some svg" className="grp28"/>
-  </Tween>
-    <div>
+
+    <div className="container cont1">
+      <Tween from={{ x: '-200px' }} duration={2}>
+      <div className="hometxt">
+        <div className="txt">KIIT's</div> <div className="txt">filmmaking </div><div className="txt">society.</div><div className="txt">Yes, official.</div> 
+       <img src={squiggle} className="squiggl" /> 
+      </div>
+     </Tween> 
     
     <i class="fas fa-star" style={{'position':'relative','top':'8em','left':'35em'}}></i>
   

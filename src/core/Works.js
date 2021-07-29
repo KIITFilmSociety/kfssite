@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 
 function Works(){
 return(
-    <div>
+    <div className="cont1">
     
   <Navbar/>
   <div className='works'>
@@ -19,6 +19,7 @@ return(
     </div>
     
  </div>
+ <div className="wave">
  <Wave fill='#2F2F2F'
         paused={false}
         options={{
@@ -28,7 +29,7 @@ return(
           points: 3
         }}
   />
-
+</div>
 </div>
   )
 

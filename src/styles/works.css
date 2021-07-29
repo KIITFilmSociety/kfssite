@@ -1,7 +1,16 @@
 @import './variables.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-
+.cont1
+{
+    height: 85vh;
+}
+.wave{
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    z-index: -1;
+}
 .works{
 
 margin-left:5vw;
