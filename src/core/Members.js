@@ -14,7 +14,7 @@ function Members () {
           name={'Kaustav Mukhopadhyay'}
           job={'Graphic Design Team'}
           about={
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+						'Lorem ipsum dolor sit amet'
 					}
           ytlink={'https://www.youtube.com/channel/UCMCA0JMQgrstjgFGWTeT_CQ'}
           iglink={'https://www.instagram.com/its_thekaustav/'}
