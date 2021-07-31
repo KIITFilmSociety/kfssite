@@ -34,11 +34,20 @@ a {
 }
 
 .lower-container {
+    position: relative;
     margin-top: 60px;
     height: 220px;
     background: #3a3a3a;
     text-align: center;
     border-radius: 20px;
+}
+
+.socials {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(1.5);
 }
 
 .lower-container h3,
@@ -71,12 +80,6 @@ p {
     color: rgb(236, 236, 236);
     font-size: 0.9rem;
     text-align: justify;
-}
-
-.socials {
-    margin: 0;
-    margin-top: 30px;
-    transform: scale(1.5);
 }
 
 .yt {

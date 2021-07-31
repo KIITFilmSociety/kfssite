@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Navbar from '../components/Navbar.js'
+import Navbar from '../components/Navbar1.js'
 import Card from '../components/Card.jsx'
 import Image1 from '../images/kauc.jpg'
 import Image2 from '../images/debu.jpg'
@@ -14,7 +14,7 @@ function Members () {
           name={'Kaustav Mukhopadhyay'}
           job={'Graphic Design Team'}
           about={
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+						'Lorem ipsum dolor sit amet'
 					}
           ytlink={'https://www.youtube.com/channel/UCMCA0JMQgrstjgFGWTeT_CQ'}
           iglink={'https://www.instagram.com/its_thekaustav/'}

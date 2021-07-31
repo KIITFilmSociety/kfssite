@@ -3,6 +3,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './core/Home'
 import Members from './core/Members'
 import Events from './core/Events'
+import About from './core/About'
+import Works from './core/Works'
+import Contact from './core/Contact'
 
 function Routes () {
   return (
@@ -13,6 +16,7 @@ function Routes () {
       <Route path="/events" exact component={Events} />
       <Route path="/about" exact component={About} />
       <Route path="/works" exact component={Works} />
+      <Route path="/contact" exact component={Contact} />
       </Switch>
     </BrowserRouter>
   )

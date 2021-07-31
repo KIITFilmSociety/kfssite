@@ -1,16 +1,14 @@
 import * as React from 'react'
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar1';
+import Wave from 'react-wavify'
 import '../styles/works.css'
-import Vector from '../images/Vector.png'
 import {Link} from 'react-router-dom'
 
 function Works(){
 return(
-    <div>
+    <div className="cont1">
     
   <Navbar/>
-  <img src={Vector} alt="something " className="vector"/>
- 
   <div className='works'>
     <h1>OUR WORK</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
@@ -21,11 +19,19 @@ return(
     </div>
     
  </div>
-
+ <div className="wave">
+ <Wave fill='#2F2F2F'
+        paused={false}
+        options={{
+          height: 20,
+          amplitude: 30,
+          speed: 0.25,
+          points: 3
+        }}
+  />
+</div>
 </div>
   )
-
 }
 
-export default Works;
-
+export default Works
