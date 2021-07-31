@@ -136,3 +136,7 @@ background: var(--primary);
      
    }
 } */
+
+.nav-link:hover{
+color:var(--primary) !important;
+}
