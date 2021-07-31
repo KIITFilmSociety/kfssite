@@ -29,14 +29,14 @@ function Home() {
       <Tween from={{ x: '-200px' }} duration={2}>
       <div className="hometxt">
         <div className="txt">KIIT's</div> <div className="txt">filmmaking </div><div className="txt">society.</div><div className="txt">Yes, official.</div> 
-       <img src={squiggle} className="squiggl" /> 
+       <img src={squiggle} alt ="" className="squiggl" /> 
       </div>
      </Tween> 
     
     <i class="fas fa-star" style={{'position':'relative','top':'8em','left':'35em'}}></i>
   
   <Tween from={{ y: '200px',x:"-200px"}} duration={1}>
-  <img src={flame} alt="something " className="flame"/>
+  <img src={flame} alt="" className="flame"/>
   </Tween>
     
     <Tween from={{ opacity: 0 }} to={{ opacity: 1 }} duration={2} >
