@@ -1,10 +1,7 @@
 @import './variables.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-.cont1
-{
-    height: 85vh;
-}
+
 .wave{
     position: absolute;
     bottom: 0px;
@@ -36,7 +33,7 @@ margin-top: 1em;
 .work-buttons{
     display:inline-flex;
     position:relative;
-    left:2.2em;
+    left:0px;
     margin-top: 1em;
     
 }
@@ -49,3 +46,43 @@ margin-top: 1em;
     color: black;
 }
 
+.button-bot{
+    position: relative;
+    width: 170px;
+    height: 53px;
+    /* left: 144px; */
+    top:3vh;
+    display: block;
+    /* margin-left: 10vw; */
+    /* margin-top: 5vh; */
+    background: var(--primary);
+    border-radius: 5px;
+    z-index:2;
+    border:0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    }
+
+    @media(max-width: 500px){
+        .wave{
+            display: none;
+        }
+        .works p{
+            position: relative;
+            width: 70vw;
+            height: 20vh;
+     }
+     .works button{
+        width: 148px;
+        height: 44px;
+       
+     }
+
+     .works a{
+        margin-left: 0px;
+     }
+        
+    }

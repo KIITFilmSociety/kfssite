@@ -39,3 +39,11 @@ pre{
     padding-top: 1em;
 color:white !important;
 }
+
+@media(max-width:700px){
+    .contact-1{
+        left:10vw;
+        height: 30vh;
+        width: 70vw;
+    }
+}

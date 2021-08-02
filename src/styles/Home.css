@@ -115,10 +115,10 @@ color:var(--primary);
 
 @media only screen and (max-width: 767px) 
 {
-/* .flame
+.flame
 {
   display: none;
-}*/
+}
 .elps
 {
   display: none;
@@ -131,8 +131,8 @@ color:var(--primary);
 {
   display: none;
 } */
-.cont1
+/* .cont1
 {
   display: none;
-}
+} */
 }

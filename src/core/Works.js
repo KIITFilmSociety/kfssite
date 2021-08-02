@@ -13,8 +13,8 @@ return(
     <h1>OUR WORK</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     <div className='work-buttons'>
-    <Link to="#" style={{color:"black",textDecoration: 'none'}}><button type="button"  className="button"><i class="fab fa-youtube"/>Short Films</button></Link>
-    <Link to="#" style={{color:"black",textDecoration: 'none'}}><button type="button"  className="button"><i class="fab fa-medium"/>Blogs</button></Link>
+    <Link to="#" style={{color:"black",textDecoration: 'none'}}><button type="button"  className="button-bot"><i class="fab fa-youtube"/>Short Films</button></Link>
+    <Link to="#" style={{color:"black",textDecoration: 'none'}}><button type="button"  className="button-bot"><i class="fab fa-medium"/>Blogs</button></Link>
     
     </div>
     

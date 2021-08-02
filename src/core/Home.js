@@ -14,7 +14,7 @@ function Home() {
       <div className="App">
       <Navbar/>
      
-      <i class="fas fa-star" style={{'position':'relative','top':'18px','left':'11em'}}></i>
+      <i class="fas fa-star" style={{'position':'absolute','left':'12vw'}}></i>
      <Timeline
     target={
       <img src={Ellips2} alt="some svg" className="elps"/>
