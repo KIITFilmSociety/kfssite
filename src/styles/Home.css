@@ -86,7 +86,10 @@ animation: 2.5s rotate infinite;
 animation-timing-function: linear;
 color:var(--primary);
 }
-
+.mobile
+{
+  display: none;
+}
 
 /* .fa-star{
   z-index: 1;
@@ -112,6 +115,17 @@ color:var(--primary);
 	-moz-border-radius: 100px;
 	border-radius: 100px;
 } */
+a:link {
+  text-decoration: none;
+  color: inherit;
+  cursor: auto;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  cursor: auto;
+}
 
 @media only screen and (max-width: 767px) 
 {
@@ -123,16 +137,83 @@ color:var(--primary);
 {
   display: none;
 }
-/*.hometxt
+.mobilehide
 {
-  display: none;
+  display: none!important;
 }
-.button-bot
+.mobile
 {
-  display: none;
-} */
-/* .cont1
-{
-  display: none;
-} */
+display: block;
+color: white;
+font-family: Montserrat;
+font-style: normal;
 }
+.mobilemaintext
+{
+  z-index: 2;
+  font-weight: 700;
+  font-size: 24px;
+  width:max-content;
+  margin-top: 5vh; 
+}
+
+.mobilesquiggl
+{
+  width: 20vw;
+  margin-top: -2%;
+  justify-self: end;
+  display: block;
+  margin-left: 20%;
+}
+.mobileevents,.mobileblogs
+{
+  height: max-content;
+  padding: 30px 10px;
+  margin-top: 3vh;
+  border-radius: 10px;
+  display: flex;
+}
+.mobileevents
+{
+  background-image: linear-gradient(283.69deg, #FF1E1E 9.68%, #FBFF35 179.56%);
+}
+.mobileblogs
+{
+  background-image:linear-gradient(115.92deg, #A45CDD 2.78%, rgba(232, 0, 0, 0.82) 126.33%);
+}
+
+.mevr img,.mblgr img
+{
+width: 100%;
+border-radius: 5px;
+}
+.mevhead,.mblghead
+{
+ 
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+padding-top: 2vh;
+
+}
+.mevtxt,.mblgtxt
+{
+  padding-top: 2vh;
+  font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.cont1
+{
+  height: 0px;
+}
+}
+
