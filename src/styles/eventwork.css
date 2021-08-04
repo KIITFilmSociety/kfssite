@@ -1,0 +1,10 @@
+.sheet-window iframe{
+    height:74vh !important;
+    width:90vw !important;
+    padding-top: 8px;
+}
+
+.event-work{
+    position: relative;
+    left:  5vw;
+}

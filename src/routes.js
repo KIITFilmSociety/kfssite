@@ -6,7 +6,7 @@ import Events from './core/Events'
 import About from './core/About'
 import Works from './core/Works'
 import Contact from './core/Contact'
-
+import Eventwork from './core/Eventwork'
 function Routes () {
   return (
     <BrowserRouter>
@@ -17,6 +17,7 @@ function Routes () {
       <Route path="/about" exact component={About} />
       <Route path="/works" exact component={Works} />
       <Route path="/contact" exact component={Contact} />
+      <Route path="/eventwork" exact component={Eventwork} />
       </Switch>
     </BrowserRouter>
   )
