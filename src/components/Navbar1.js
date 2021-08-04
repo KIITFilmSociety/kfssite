@@ -22,7 +22,7 @@ function Navbar ({ history }) {
   console.log(history.location.pathname)
 
   return (
-<nav className=" container navbar navbar-expand-md transprent navbar-light">
+<nav className=" container navbar navbar-expand-md transprent navbar-dark">
     
     {
         (history.location.pathname==='/')?
@@ -32,7 +32,7 @@ function Navbar ({ history }) {
     }
   
     <button 
-        className="navbar-toggler"
+        className="navbar-toggler custom-toggler"
         type="button" 
         data-toggle="collapse" 
         data-target="#navbarSupportedContent" 
@@ -76,7 +76,7 @@ function Navbar ({ history }) {
         </div>
     </div>
     <button type='button' className='blogbutton'>
-		Blogs
+		JOIN US
     </button>
 </nav>
   )
