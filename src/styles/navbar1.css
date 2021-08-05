@@ -25,7 +25,8 @@
 .blogbutton
 {
     display: none;
-    background: rgba(53, 77, 128, 0);
+    /* background: rgba(53, 77, 128, 0); */
+    background: #FF5757;
     z-index:2;
     font-family: Montserrat;
     font-style: normal;

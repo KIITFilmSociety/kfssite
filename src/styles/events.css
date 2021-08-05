@@ -46,28 +46,47 @@ padding: 20px 20px;
 }
 
 
-
+.evwave{
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    z-index: -1;
+}
 
 @media(max-width: 992px) {
 
-    body{
+    /* body{
         overflow-y: visible;
-    }
-.eventbox{
+    } */
+/* .eventbox{
     flex-direction: column;
+} */
+.eventbox img
+{
+display: none;
+/* align-self: center;
+border-radius: 20px; */
 }
-.eventbox img{
-    align-self: center;
-    border-radius: 20px;
-
-
+.evtxt
+{
+    margin: 20px 0px;
 }
-.evinfo
+/* .evinfo
 {
     padding-left: 20px;
     padding-top: 0px;
-}
+}*/
 .evinfo {
     text-align: center;
+} 
+.registerbtn
+{
+    margin: -5px auto;
+    background-color: #2F2F2F;
+    display: none;
 }
-  }
+.eventbox
+{
+    background-image:linear-gradient(283.69deg, #FF1E1E 9.68%, #FBFF35 179.56%); ;
+}
+}
