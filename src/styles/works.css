@@ -34,8 +34,7 @@ margin-top: 1em;
     display:inline-flex;
     position:relative;
     left:0px;
-    margin-top: 1em;
-    
+    margin-top: 1em;    
 }
 
 .fa-youtube{
@@ -64,6 +63,8 @@ margin-top: 1em;
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
+    margin-left: 20px;
+    margin-right: 20px;
     }
 
     @media(max-width: 500px){

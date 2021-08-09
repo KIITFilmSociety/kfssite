@@ -9,14 +9,11 @@ function Members () {
   return (
     <div className='App'>
       <Navbar />
-      <div className="container">
       <div className='memcontainer'>
         <Card
           name={'Kaustav Mukhopadhyay'}
           job={'Graphic Design Team'}
-          about={
-						'Lorem ipsum dolor sit amet'
-					}
+          about={'Lorem ipsum dolor sit amet'}
           ytlink={'https://www.youtube.com/channel/UCMCA0JMQgrstjgFGWTeT_CQ'}
           iglink={'https://www.instagram.com/its_thekaustav/'}
           lilink={'https://www.linkedin.com/in/kaustavmukhopadhyay/'}
@@ -29,7 +26,7 @@ function Members () {
           name={'Debangshu Bhattacharjee'}
           job={'Sound Team'}
           about={
-						'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 					}
           ytlink={'https://www.youtube.com/channel/UCMCA0JMQgrstjgFGWTeT_CQ'}
           iglink={'https://www.instagram.com/its_thekaustav/'}
@@ -41,7 +38,7 @@ function Members () {
           name={'Kaustav Mukhopadhyay'}
           job={'Graphic Design Team'}
           about={
-						' sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 					}
           ytlink={'https://www.youtube.com/channel/UCMCA0JMQgrstjgFGWTeT_CQ'}
           iglink={'https://www.instagram.com/its_thekaustav/'}
@@ -55,7 +52,7 @@ function Members () {
           name={'Debangshu Bhattacharjee'}
           job={'Sound Team'}
           about={
-						'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 					}
           ytlink={'https://www.youtube.com/channel/UCMCA0JMQgrstjgFGWTeT_CQ'}
           iglink={'https://www.instagram.com/its_thekaustav/'}
@@ -64,7 +61,6 @@ function Members () {
           cover={'https://img.artpal.com/994621/175-20-6-20-3-42-2m.jpg'}
 				/>
       </div>
-    </div>
     </div>
   )
 }
