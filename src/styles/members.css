@@ -3,3 +3,16 @@
     grid-template-columns: repeat(auto-fit, 20rem);
     justify-content: center;
 }
+
+
+.filter {
+position: absolute;
+right:5vw;
+
+}
+
+
+
+.members{
+    overflow-y: auto;
+}

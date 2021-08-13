@@ -1,70 +1,152 @@
-import * as React from 'react'
-import Navbar from '../components/Navbar1.js'
-import Card from '../components/Card.jsx'
-import Image1 from '../images/kauc.jpg'
-import Image2 from '../images/debu.jpg'
+import React, { useState, useEffect } from 'react'
+import firebase from './firebase'
+import Card from '../components/Card'
+import roles from './Roles'
+import Navbar from '../components/Navbar1';
 import '../styles/members.css'
+import findCodd from '../helper/helper';
 
 function Members () {
+  const [persons, setPersons] = useState([])
+  const [co1, setCo1] = useState([])
+  const [co2, setCo2] = useState([])
+  const [search, setSearch] = useState('')
+const co="Coordinator";
+const assi="Director"
+
+
+const fireSer=(val,arr) => {
+  
+    firebase
+          .firestore()
+          .collection('UserInfo')
+          .where('Position', '==', `${val}`)
+          .get()
+          .then(querySnapshot => {
+    querySnapshot.docs.forEach(doc => {
+      console.log(doc.data())
+      const person = {
+        FullName: doc.data().FullName,
+        Position: doc.data().Position,
+        Description: doc.data().Description,
+        Instagram: doc.data().Instagram,
+        Linkedin: doc.data().Linkedin,
+        Email: doc.data().Email,
+        DP: doc.data().DP
+      }
+      arr.push(person)
+    })
+    console.log(val);
+    
+    setPersons(arr)
+  })
+  }
+
+let details=[];
+let coord=[];
+let assistCoord=[];
+findCodd(co,coord);
+
+findCodd(assi,assistCoord);
+
+console.log(coord)
+  useEffect(
+	()=>{
+
+fireSer(search,details);
+setCo1(coord);
+setCo2(assistCoord);
+  }
+    ,
+		[search]
+	)
+  const handleVal=e=>{
+
+    setSearch(e.target.value) 
+   console.log(e)
+   }
   return (
-    <div className='App'>
-      <Navbar />
-      <div className='memcontainer'>
-        <Card
-          name={'Kaustav Mukhopadhyay'}
-          job={'Graphic Design Team'}
-          about={
-						'Lorem ipsum dolor sit amet'
-					}
-          ytlink={'https://www.youtube.com/channel/UCMCA0JMQgrstjgFGWTeT_CQ'}
-          iglink={'https://www.instagram.com/its_thekaustav/'}
-          lilink={'https://www.linkedin.com/in/kaustavmukhopadhyay/'}
-          image={Image1}
-          cover={
-						'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUv_g71-Tc4p2dSJAmIgRonBiOPjz_ybCMQiyBQy4cCQ6nSl7e8DQ3CBjJW8ynTDVeZw&usqp=CAU'
-					}
-				/>
-        <Card
-          name={'Debangshu Bhattacharjee'}
-          job={'Sound Team'}
-          about={
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-					}
-          ytlink={'https://www.youtube.com/channel/UCMCA0JMQgrstjgFGWTeT_CQ'}
-          iglink={'https://www.instagram.com/its_thekaustav/'}
-          lilink={'https://www.linkedin.com/in/kaustavmukhopadhyay/'}
-          image={Image2}
-          cover={'https://img.artpal.com/994621/175-20-6-20-3-42-2m.jpg'}
-				/>
-        <Card
-          name={'Kaustav Mukhopadhyay'}
-          job={'Graphic Design Team'}
-          about={
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-					}
-          ytlink={'https://www.youtube.com/channel/UCMCA0JMQgrstjgFGWTeT_CQ'}
-          iglink={'https://www.instagram.com/its_thekaustav/'}
-          lilink={'https://www.linkedin.com/in/kaustavmukhopadhyay/'}
-          image={Image1}
-          cover={
-						'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUv_g71-Tc4p2dSJAmIgRonBiOPjz_ybCMQiyBQy4cCQ6nSl7e8DQ3CBjJW8ynTDVeZw&usqp=CAU'
-					}
-				/>
-        <Card
-          name={'Debangshu Bhattacharjee'}
-          job={'Sound Team'}
-          about={
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-					}
-          ytlink={'https://www.youtube.com/channel/UCMCA0JMQgrstjgFGWTeT_CQ'}
-          iglink={'https://www.instagram.com/its_thekaustav/'}
-          lilink={'https://www.linkedin.com/in/kaustavmukhopadhyay/'}
-          image={Image2}
-          cover={'https://img.artpal.com/994621/175-20-6-20-3-42-2m.jpg'}
-				/>
-      </div>
-    </div>
+    <div className="members">
+      <Navbar/>
+      
+          
+             <div className="filter"> 
+              <select onChange={handleVal} className="btn bg-danger">
+                  {roles.map((role,index)=>(
+
+                    <option className="bg-success" key={index}  value={role.text}>{role.text}</option>
+                  ))
+                  }
+              </select>
+              </div>
+              <div class="container">
+
+        
+        <div>
+        <div className="row">
+          {co1.map((val, key) => {
+            return (
+              <div key={key}  className="coord">
+                <Card
+                  name={val.FullName}
+                  job={val.Position}
+                  about={val.Description}
+                  iglink={val.Instagram}
+                  lilink={val.Linkedin}
+                  email={val.Email}
+                  image={val.DP}
+								/>
+
+              </div>
+              
+            )
+          })}
+          </div>
+          </div>
+            <div>
+         
+          {co2.map((val, key) => {
+            return (
+              <div key={key}  className="assi-coord">
+                <Card
+                  name={val.FullName}
+                  job={val.Position}
+                  about={val.Description}
+                  iglink={val.Instagram}
+                  lilink={val.Linkedin}
+                  email={val.Email}
+                  image={val.DP}
+								/>
+
+              </div>
+              
+            )
+          })}
+          </div>
+          <div  className="row ">
+      {persons.map((val, key) => {
+            return (
+              <div key={key} id='persons' className="">
+                <Card
+                  name={val.FullName}
+                  job={val.Position}
+                  about={val.Description}
+                  iglink={val.Instagram}
+                  lilink={val.Linkedin}
+                  email={val.Email}
+                  image={val.DP}
+								/>
+
+              </div>
+              
+            )
+          })}
+          </div>
+        </div>
+        </div>
+      
+   
   )
 }
 
-export default Members
+export default Members;

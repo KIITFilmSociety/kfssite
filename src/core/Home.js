@@ -72,7 +72,7 @@ function Home() {
       </div>
      </Tween> 
     
-    <i class="fas fa-star mobilehide" style={{'position':'relative','top':'8em','left':'35em'}}></i>
+    
   
   <Tween from={{ y: '200px',x:"-200px"}} duration={1}>
   <img src={flame} alt="" className="flame"/>
