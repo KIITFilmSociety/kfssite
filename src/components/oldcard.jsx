@@ -4,7 +4,7 @@ import '../styles/Card.css'
 function Card ({ name, about, job, ytlink, iglink, lilink, image, cover }) {
   return (
     <div className='Card'>
-      {/* <div
+      <div
         className='upper-container'
         style={{ backgroundImage: `url(${cover})` }}
 			>
@@ -33,34 +33,7 @@ function Card ({ name, about, job, ytlink, iglink, lilink, image, cover }) {
             <i class='fab fa-linkedin-in li' />
           </a>
         </div>
-      </div> */}
-      <div className="leftbox">
-        <div className='image-container'>
-          <img src={image} alt='dp' height='100px' width='100px' />
-        </div>
       </div>
-      <div className="rightbox">
-      <div className="cardname">
-          {name}
-        </div>
-        <div className="cardjob">
-          {job}
-        </div>
-        <div className="cardabout">
-          {about}
-        </div>
-        <div className='socials'>
-          <a href={ytlink} target='_blank' rel='noreferrer'>
-            <i class='fab fa-youtube yt' />
-          </a>
-          <a href={iglink} target='_blank' rel='noreferrer'>
-            <i class='fab fa-instagram ig' />
-          </a>
-          <a href={lilink} target='_blank' rel='noreferrer'>
-            <i class='fab fa-linkedin-in li' />
-          </a>
-        </div>
-      </div>  
     </div>
   )
 }

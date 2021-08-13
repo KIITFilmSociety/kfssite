@@ -57,6 +57,9 @@ justify-content: center;
 a.nav-link
 {
     text-align: end;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 @media only screen and (min-width: 768px) 

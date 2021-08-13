@@ -1,6 +1,7 @@
 .memcontainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-template-columns: repeat(auto-fit, 40vw);
+    /* grid-template-columns: repeat(auto-fit, 20rem); */
     justify-content: center;
 }
 

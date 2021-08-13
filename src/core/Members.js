@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import firebase from './firebase'
-import Card from '../components/Card'
+import Card from '../components/oldcard'
 import roles from './Roles'
 import Navbar from '../components/Navbar1';
 import '../styles/members.css'
@@ -83,7 +83,7 @@ setCo2(assistCoord);
 
         
         <div>
-        <div className="row">
+        <div className="filter">
           {co1.map((val, key) => {
             return (
               <div key={key}  className="coord">
