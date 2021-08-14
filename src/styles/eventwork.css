@@ -3,7 +3,7 @@
 {
     font-family: Montserrat;
     font-style: normal;
-    color: white;
+   
 }
 
 .sheet-window iframe{
@@ -26,6 +26,8 @@
 {
     margin-top: 5vh;
     color: white!important;
+    position: relative;
+    left:0px;
  
 }
 

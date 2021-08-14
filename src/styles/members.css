@@ -1,5 +1,6 @@
 .memcontainer {
     display: grid;
+    
     grid-template-columns: repeat(auto-fit, 40vw);
     /* grid-template-columns: repeat(auto-fit, 20rem); */
     justify-content: center;
@@ -16,4 +17,22 @@ right:5vw;
 
 .members{
     overflow-y: auto;
+    color: white;
+}
+
+.col{
+    width:50vw;
+}
+
+.sudo{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h4{
+    margin-bottom: 0 !important;
+}
+.mobilesquiggl{
+width:10vw;
 }

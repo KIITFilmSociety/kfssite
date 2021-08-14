@@ -46,9 +46,6 @@ function Card ({ name, about, job, ytlink, iglink, lilink, image, cover }) {
         <div className="cardjob">
           {job}
         </div>
-        <div className="cardabout">
-          {about}
-        </div>
         <div className='socials'>
           <a href={ytlink} target='_blank' rel='noreferrer'>
             <i class='fab fa-youtube yt' />
